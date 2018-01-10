@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F35E518D1FF6177B00E74A9D /* LoginTask.m in Sources */ = {isa = PBXBuildFile; fileRef = F35E518C1FF6177B00E74A9D /* LoginTask.m */; };
 		F35E51901FF6179100E74A9D /* UserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F35E518F1FF6179100E74A9D /* UserInfoModel.m */; };
+		F379C5412004E3730074E798 /* MVPCleanLogin.png in Resources */ = {isa = PBXBuildFile; fileRef = F379C5402004E3720074E798 /* MVPCleanLogin.png */; };
 		F3C3B0CB1FFCB10B00C70DC7 /* LoginDisk.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C3B0CA1FFCB10B00C70DC7 /* LoginDisk.m */; };
 		F3C3B0CE1FFCBE4500C70DC7 /* ErrorMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C3B0CD1FFCBE4500C70DC7 /* ErrorMessage.m */; };
 		F3FDB0CA1FF4C3FB00E6C3EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FDB0C91FF4C3FB00E6C3EE /* AppDelegate.m */; };
@@ -30,6 +31,7 @@
 		F35E518E1FF6179100E74A9D /* UserInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoModel.h; sourceTree = "<group>"; };
 		F35E518F1FF6179100E74A9D /* UserInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoModel.m; sourceTree = "<group>"; };
 		F35E51911FF6189800E74A9D /* LoginTaskProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginTaskProtocol.h; sourceTree = "<group>"; };
+		F379C5402004E3720074E798 /* MVPCleanLogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MVPCleanLogin.png; sourceTree = "<group>"; };
 		F3C3B0C91FFCB10B00C70DC7 /* LoginDisk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginDisk.h; sourceTree = "<group>"; };
 		F3C3B0CA1FFCB10B00C70DC7 /* LoginDisk.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginDisk.m; sourceTree = "<group>"; };
 		F3C3B0CC1FFCBE4500C70DC7 /* ErrorMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ErrorMessage.h; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 		F3FDB0BC1FF4C3FB00E6C3EE = {
 			isa = PBXGroup;
 			children = (
+				F379C5402004E3720074E798 /* MVPCleanLogin.png */,
 				F3FDB0C71FF4C3FB00E6C3EE /* MVPCleanDemon */,
 				F3FDB0C61FF4C3FB00E6C3EE /* Products */,
 			);
@@ -117,7 +120,6 @@
 		F3FDB0DF1FF4C50900E6C3EE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F3FDB0FA1FF4FC5300E6C3EE /* LoginProtocol.h */,
 				F3FDB0EE1FF4E77500E6C3EE /* LoginViewController.h */,
 				F3FDB0EF1FF4E77500E6C3EE /* LoginViewController.m */,
 				F3FDB0F71FF4F61C00E6C3EE /* RegisterViewController.h */,
@@ -129,6 +131,7 @@
 		F3FDB0E01FF4C51800E6C3EE /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				F3FDB0FA1FF4FC5300E6C3EE /* LoginProtocol.h */,
 				F3FDB0F41FF4F0B000E6C3EE /* LoginPresenter.h */,
 				F3FDB0F51FF4F0B000E6C3EE /* LoginPresenter.m */,
 			);
@@ -147,6 +150,7 @@
 		F3FDB0E21FF4C63800E6C3EE /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				F3FDB0E81FF4C6C000E6C3EE /* Model */,
 				F3FDB0E41FF4C66C00E6C3EE /* Source */,
 			);
 			path = Data;
@@ -156,7 +160,6 @@
 			isa = PBXGroup;
 			children = (
 				F3FDB0E91FF4C6CD00E6C3EE /* Usercase */,
-				F3FDB0E81FF4C6C000E6C3EE /* Model */,
 				F3FDB0E71FF4C6AD00E6C3EE /* Filter */,
 			);
 			path = Domain;
@@ -269,6 +272,7 @@
 				F3FDB0D51FF4C3FB00E6C3EE /* LaunchScreen.storyboard in Resources */,
 				F3FDB0D21FF4C3FB00E6C3EE /* Assets.xcassets in Resources */,
 				F3FDB0D01FF4C3FB00E6C3EE /* Main.storyboard in Resources */,
+				F379C5412004E3730074E798 /* MVPCleanLogin.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

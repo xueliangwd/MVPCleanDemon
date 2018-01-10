@@ -14,6 +14,11 @@
     
     //测试数据，
     int arcCode = arc4random()%2;
+    NSDictionary * dicParams = (NSDictionary*)params;
+    NSString *userName = dicParams[@"userNameString"];
+    if ([userName isEqualToString:@"chenggong"]) {
+        arcCode = 0;
+    }
     switch (arcCode) {
         case 0:{
             UserInfoModel *testModel = [[UserInfoModel alloc]init];

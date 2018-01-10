@@ -30,8 +30,13 @@
     [self setupData];
 }
 -(void)setupData{
+    /**===测试数据====**/
+    userNameTF.text = @"chenggong";
+    pwdTF.text = @"123456";
+    /**===测试数据====**/
     _loginPresenter = [[LoginPresenter alloc]initWithView:self];
 }
+//UI 初始化布局
 -(void)setupUI{
     UILabel* userNameLb = [[UILabel alloc]initWithFrame:CGRectMake(50, 200, 80, 36)];
     userNameLb.text = @"用户名：";
@@ -61,6 +66,8 @@
     registerBtn.frame = CGRectMake(210, 300, 50, 36);
     registerBtn.backgroundColor = [UIColor blueColor];
     [registerBtn setTitle:@"注册" forState:UIControlStateNormal];
+    [registerBtn addTarget:self action:@selector(registerClick:) forControlEvents:UIControlEventTouchUpInside];
+
     [self.view addSubview:registerBtn];
 }
 - (void)didReceiveMemoryWarning {
@@ -82,6 +89,9 @@
 }
 -(void)registerClick:(id)sender{
     //跳转至注册页
+    RegisterViewController * ctl = [[RegisterViewController alloc]init];
+    ctl.title = @"注册";
+    [self.navigationController pushViewController:ctl animated:YES];
 }
 #pragma mark LoginProtocol
 -(void)loginSuccess:(id)model{

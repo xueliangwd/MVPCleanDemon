@@ -9,5 +9,12 @@
 #import "Presenter.h"
 
 @interface LoginPresenter : Presenter
+
+/**
+ Presenter 响应登录事件
+
+ @param userNameString 用户名
+ @param pwdString 密码
+ */
 -(void)loginWithUserName:(NSString*)userNameString password:(NSString*)pwdString;
 @end

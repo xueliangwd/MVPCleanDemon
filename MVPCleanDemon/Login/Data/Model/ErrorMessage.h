@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ 登录失败返回错误信息
+ */
 @interface ErrorMessage : NSObject
 @property(nonatomic,assign) NSInteger code;
 @property(nonatomic,strong) NSString *errorMessage;

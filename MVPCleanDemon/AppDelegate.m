@@ -22,7 +22,9 @@
     self.window.rootViewController = [[HomeViewController alloc]init];
     [self.window makeKeyAndVisible];
     LoginViewController * login = [[LoginViewController alloc]init];
-    [self.window.rootViewController presentViewController:login animated:YES completion:nil];
+    login.title = @"登录";
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:login];
+    [self.window.rootViewController presentViewController:nav animated:YES completion:nil];
     return YES;
 }
 

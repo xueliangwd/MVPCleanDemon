@@ -10,7 +10,7 @@
 #import "LoginTask.h"
 #import "LoginProtocol.h"
 @interface LoginPresenter()<LoginTaskProtocol>{
-    LoginTask *_loginTask;
+
 }
 
 @end
@@ -25,7 +25,9 @@
 -(void)loginWithUserName:(NSString*)userNameString password:(NSString*)pwdString{
     //通过usercaseHandle 发起登录流程
    //userCase login
-    [[LoginTask alloc]initWithParams:@{@"userNameString":userNameString,@"pwdString":pwdString} delegate:self];
+    LoginTask *task = [[LoginTask alloc]init];//Task 就是一个具体的UserCase 完成一项具体业务
+    //调用 UserCase Handle方法
+    [task loginWithParams:@{@"userNameString":userNameString,@"pwdString":pwdString} delegate:self];
 }
 
 #pragma mark UserCaseCallBac
