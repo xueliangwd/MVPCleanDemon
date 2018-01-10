@@ -21,7 +21,7 @@ MVP+Clean 结构实现的登录模块Demon，为了更好的理解MVP + Clean �
 ## Installation
 
 ## Author
-yuxueliang, yuxueliang@gomeplus.com
+yuxueliang, xueliangwd@163.com
 
 ## License
 
